@@ -1,10 +1,8 @@
-
-
 import React from "react";
 import { FaGithub } from "react-icons/fa";
 import { FiExternalLink } from "react-icons/fi";
 
-// Images comes from assets folder
+// Images
 import PortfolioImg from "../../src/assets/portfolio.png";
 import FruitshopImg from "../../src/assets/Fruitshop.png";
 // import WeatherImg from "../../src/assets/weather.png";
@@ -27,7 +25,7 @@ const projects = [
     tech: ["React", "Node.js", "Express", "MongoDB", "TailwindCSS"],
     githubClient: "https://github.com/sunilkumawat1255/client.git",
     githubServer: "https://github.com/sunilkumawat1255/server.git",
-    live: "http://fruitshop-project.vercel.app",
+    live: "https://fruitshop-client.vercel.app/",
   },
   {
     title: "Weather App",
@@ -134,7 +132,7 @@ const Projects = ({ theme }) => {
           </div>
         ))}
       </div>
-    </section> 
+    </section>
   );
 };
 

@@ -10,4 +10,5 @@ Currently, two official plugins are available:
 =======
 # sunil-portfolio
 My personal portfolio built using React and Tailwind CSS.
+live preview link :  https://sunilk-portfolio.vercel.app/
 >>>>>>> 217565b6c3d26fdcda0cc4a0dfe08e403d5445ee

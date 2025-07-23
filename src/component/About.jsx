@@ -31,7 +31,7 @@ const About = ({ theme }) => {
         </h2>
 
         {/* Skills Cards */}
-        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-8 justify-center">
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8 justify-center">
           {skills.map((skill, index) => (
             <motion.div
               key={index}

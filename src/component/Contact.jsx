@@ -24,7 +24,7 @@ const Contact = ({ theme }) => {
 
           <div className="flex gap-6 text-xl">
             <a
-              href="https://github.com/your-github"
+              href="https://github.com/sunilkumawat1255"
               target="_blank"
               rel="noopener noreferrer"
               className="hover:text-blue-500"
@@ -32,7 +32,7 @@ const Contact = ({ theme }) => {
               <FaGithub />
             </a>
             <a
-              href="https://linkedin.com/in/your-linkedin"
+              href="https://www.linkedin.com/in/sunil-kumawat-54096a289"
               target="_blank"
               rel="noopener noreferrer"
               className="hover:text-blue-500"

@@ -134,7 +134,7 @@ const Projects = ({ theme }) => {
           </div>
         ))}
       </div>
-    </section>
+    </section> 
   );
 };
 

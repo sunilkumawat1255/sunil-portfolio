@@ -1,11 +1,10 @@
 import React from "react";
 import { FaGithub } from "react-icons/fa";
-import { FiExternalLink } from "react-icons/fi";
 
 // Images
 import PortfolioImg from "../../src/assets/portfolio.png";
 import FruitshopImg from "../../src/assets/Fruitshop.png";
-// import WeatherImg from "../../src/assets/weather.png";
+import NotesProjectImg from "../../src/assets/notesApp.png";
 
 const projects = [
   {
@@ -29,12 +28,11 @@ const projects = [
   },
   {
     title: "Weather App",
-    description:
-      "A weather app using OpenWeatherMap API to show real-time weather of any city.",
-    // image: WeatherImg,
+    description: "A Notes app using html,css,js for creating personal notes.",
+    image: NotesProjectImg,
     tech: ["HTML", "CSS", "JavaScript"],
-    github: "https://github.com/your-repo/weather",
-    live: "https://weather-app.vercel.app/",
+    github: "https://github.com/sunilkumawat1255/Notes-app.git",
+    live: "https://sunil-notes.vercel.app/",
   },
 ];
 
@@ -87,8 +85,8 @@ const Projects = ({ theme }) => {
                 ))}
               </div>
 
-              <div className="flex gap-4 text-xl">
-                {/* If this is the Fruitshop project (index === 1), show both GitHub links */}
+              <div className="flex gap-4 items-center flex-wrap">
+                {/* GitHub links */}
                 {index === 1 ? (
                   <>
                     <a
@@ -97,7 +95,7 @@ const Projects = ({ theme }) => {
                       rel="noopener noreferrer"
                       title="Frontend Code"
                     >
-                      <FaGithub className="hover:text-blue-500 transition" />
+                      <FaGithub className="text-xl hover:text-blue-500 transition" />
                     </a>
                     <a
                       href={project.githubServer}
@@ -105,27 +103,29 @@ const Projects = ({ theme }) => {
                       rel="noopener noreferrer"
                       title="Backend Code"
                     >
-                      <FaGithub className="hover:text-green-500 transition" />
+                      <FaGithub className="text-xl hover:text-green-500 transition" />
                     </a>
                   </>
                 ) : (
-                  // For all other projects, single GitHub link
                   <a
                     href={project.github}
                     target="_blank"
                     rel="noopener noreferrer"
+                    title="GitHub Code"
                   >
-                    <FaGithub className="hover:text-blue-500 transition" />
+                    <FaGithub className="text-xl hover:text-blue-500 transition" />
                   </a>
                 )}
-                {/* Live preview link (all projects) */}
+
+                {/* Live Preview Button */}
                 <a
                   href={project.live}
                   target="_blank"
                   rel="noopener noreferrer"
                   title="Live Preview"
+                  className="text-sm bg-purple-600 hover:bg-purple-700 text-white font-medium py-2 px-4 rounded-md transition-all duration-300"
                 >
-                  <FiExternalLink className="hover:text-purple-500 transition" />
+                   Live Preview
                 </a>
               </div>
             </div>

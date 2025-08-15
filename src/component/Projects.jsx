@@ -33,7 +33,7 @@ const projects = [
     image: TodoImg,
     tech: ["React", "Tailwindcss"],
     github: "https://github.com/sunilkumawat1255/TodoApp.git",
-    live: "tododaily-app.vercel.app",
+    live: "https://tododaily-app.vercel.app",
   },
   {
     title: "Weather App",

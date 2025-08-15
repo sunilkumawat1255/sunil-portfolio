@@ -5,6 +5,7 @@ import { FaGithub } from "react-icons/fa";
 import PortfolioImg from "../../src/assets/portfolio.png";
 import FruitshopImg from "../../src/assets/Fruitshop.png";
 import NotesProjectImg from "../../src/assets/notesApp.png";
+import TodoImg from "../../src/assets/Todo.png";
 
 const projects = [
   {
@@ -25,6 +26,14 @@ const projects = [
     githubClient: "https://github.com/sunilkumawat1255/client.git",
     githubServer: "https://github.com/sunilkumawat1255/server.git",
     live: "https://fruitshop-client.vercel.app/",
+  },
+  {
+    title: "Todo App",
+    description: "A Todo App is created using React and Tailwindcss.",
+    image: TodoImg,
+    tech: ["React", "Tailwindcss"],
+    github: "https://github.com/sunilkumawat1255/TodoApp.git",
+    live: "tododaily-app.vercel.app",
   },
   {
     title: "Weather App",
@@ -125,7 +134,7 @@ const Projects = ({ theme }) => {
                   title="Live Preview"
                   className="text-sm bg-purple-600 hover:bg-purple-700 text-white font-medium py-2 px-4 rounded-md transition-all duration-300"
                 >
-                   Live Preview
+                  Live Preview
                 </a>
               </div>
             </div>
